@@ -1,0 +1,19 @@
+<div id="movable">CAT</div>
+
+<style>
+    #movable {
+        position: absolute;
+    }
+</style>
+
+<script>
+    const move = document.getElementById("movable");
+
+    window.addEventListener('mousemove', function(e) {
+        const left = e.pageX + 10 + "px";
+        const top = e.pageY + 10 + "px";
+        move.style.left = left;
+        move.style.top = top;
+    });
+</script>
+
